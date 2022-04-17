@@ -7,11 +7,19 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <picture>
-        <source srcset="img/cover.avif" type="image/avif">
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <div class="content">
+        <div class="todolist">
+          <h1 class="title">ToDoList by rusyazlatik</h1>
+
+          <form class="todolist__form" action="">
+            <input class="todolist__input input-reset" type="text" placeholder="Enter textures for today">
+            <button class="todolist__btn btn-reset"></button>
+          </form>
+
+          <ul class="list list-reset">
+          </ul>
+        </div>
+      </div>
     </main>
 
     @include('partials/footer.html')
